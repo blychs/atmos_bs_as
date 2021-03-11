@@ -94,8 +94,12 @@
 \begin{abstract}
 %% Text of abstract
 
-Two 24-hour samples were collected every 3 days for almost a year, one in a quartz fiber high volume (HV) filter and another one in a Teflon (Polytetrafluoroethylene) low volume (LV) membrane filter in a measuring site in Buenos Aires. Each filter was dried and weighted, and HV filters were cut to perform different chemical analyses, including Elemental Carbon/Organic Carbon, ions and heavy metals. %(CHEQUEAR QUÉ SE ANALIZÓ).
+Mass reconstruction tries to achieve closure between gravimetric mass and the sum of major components to account for unmeasured species. PM mass reconstruction is used to identify and correct potential measurement errors and estimate source contributions (Chow, J.C., Lowenthal, D.H., Chen, LW.A. et al. Mass reconstruction methods for PM2.5). The practice of mass closure is key in checking internal consistency and validating chemical analysis results. It´s use for chemical characterization studies is highly recommended%, particularly if additional techniques (i.e. receptor models) are to be used for determining source contributions to particulate matter%
+. One particular specie is the Ammonium:  it is an important constituent of particulate mass in the atmosphere, but it is well known to be difficult to quantify due to possible sampling artifacts. Losses of semivolatile species such as $\mathrm{NH_4 NO_3}$ can be particularly problematic. In order to evaluate ammonium losses from aerosol particles collected on filters, a series of experiments were conducted to obtain a more precise mass closure results.
 
+Two 24-hour samples were collected every 3 days for almost a year, one in a quartz fiber high volume (HV) filter and another one in a Teflon (Polytetrafluoroethylene) low volume (LV) membrane filter in a measuring site in Buenos Aires. Each filter was dried and weighted, and HV filters were cut to perform different chemical analyses, including Elemental Carbon/Organic Carbon, ions and trace elements.
+
+%Resultados y conclusiones
 
 
 \end{abstract}
@@ -129,7 +133,7 @@ Particulate Matter \sep PM2.5 \sep air pollution \sep air quality \sep EC/OC \se
 \section{Introduction}
 \label{sec:introduction}
 
-Air pollution represents one of the greatest environmental risks to health. According to the World Health Organization, in 2012 one out of every nine deaths was the result of air pollution-related conditions, and 3 million of those are attributable to outdoor conditions. Aerosols, and particularly particulate matter of a diameter less than 2.5 micrometers (PM$_{2.5}$) is especially relevant when assessing human exposure to pollution \cite{WorldHealthOrganization2016AmbientDisease}. 
+Air pollution represents one of the greatest environmental risks to health. According to the World Health Organization, in 2012 one out of every nine deaths was the result of air pollution-related conditions, and 3 million of those are attributable to outdoor conditions. Aerosols, and particularly particulate matter of a diameter less than 2.5 micrometers (PM$_{2.5}$) is especially relevant when assessing human exposure to pollution \cite{WorldHealthOrganization2016AmbientDisease}. In Argentina, WHO estimates about 14,800 deaths in 2016 \cite{WorldHealthOrganization2018AmbientDeaths}.
 
 Knowing aerosol composition is useful to apportion sources, evaluate pollution causes, assess toxic components which may be of interest for public health, evaluate particle scattering and absorption and its effects on visibility and the Earth's radiation balance. %Agregar short lived climate forcers y climate change, (Caerbonosas, SO2, NH4+).
 This proceeding usually consist in quantifying many aerosol components, and attempting to reconstruct aerosol mass by using specific equations (a proceeding often known as mass closure). However, when using filters, measurements are not artifact free. Of particular importance are the facts that ammonium an nitrate (which are present in all mass closure equations) may evaporate from Teflon and quartz filters. Another usual problem is the conversion from organic carbon (OC) to organic matter (OM).%, which requires a multiplier ($f$) that may range from 1.2 to 2.6, depending on OM oxidation, although usually 1.4 is used for urban sites.  \cite{Chow2015MassReview}  --> Va a métodos
@@ -166,7 +170,7 @@ This study consists on an analysis of the results of this campaign in the Metrop
 As part of the ARCAL project, the monitoring strategy consisted in sample collection with both quartz high volume (HV) filters and Teflon low volume filters (LV). In Buenos Aires, a single sampling site was selected.
 
 %\subsubsection{Sampling site} %Es casi una copia del que mandó Darío, hay que editarlo para que no salte cosas de plagio.
-All samples were collected on the roof of a building at Comisión Nacional de Energía Atómica (CNEA, 34.57°S, 58.51°W), similar to \cite{GelmanConstantin2020Plasma-basedAerosols}, which is approximately 12 m above sea level, in the Greater Buenos Aires. The roof selected to place the sampler is at approximately 25 m distance from the highway that divides the city of Buenos Aires from surrounding districts. It is normally influenced by emissions from urban vehicular traffic, sea salt spray, local and regional biomass burning \cite{Resquin2018LocalAires}.
+All samples were collected on the roof of a building at Comisión Nacional de Energía Atómica (CNEA, 34.57°S, 58.51°W), similar to \cite{GelmanConstantin2021Plasma-basedAerosols}, which is approximately 12 m above sea level, in the Greater Buenos Aires. The roof selected to place the sampler is at approximately 25 m distance from the highway that divides the city of Buenos Aires from surrounding districts. It is normally influenced by emissions from urban vehicular traffic, sea salt spray, local and regional biomass burning \cite{Resquin2018LocalAires}.
 
 
 
@@ -174,7 +178,8 @@ All samples were collected on the roof of a building at Comisión Nacional de En
 %Falta colocar los equipos que usamos, tenemos el problema de que para LV fuimos cambiando de equipo a medida que pasaba el tiempo.
 Samples were collected during a 24 hour period, starting at noon for safety and operational reasons. A sample was collected every 3 days. All were labeled according to the day sampling started.
 LV filters were 47 mm, with a 4 $\mu$m pore, %CHEQUEAR ESTO, ES LO QUE DICE EL PROTOCOLO PERO CREO QUE ESTÁ MAL
-and a collection efficiency of at least 99.9\%.
+and a collection efficiency of at least 99.9\%. Due to multiple equipment breakage, some filters were measured with a Partisol \textbf{COMPLETAR}, and some with a PQ \textbf{COMPLETAR}, some with an Airmetric \textbf{COMPLETAR}. Taking that into account, we used HV filters for most of the analysis (due to LV filters being present in most regulations, some measurements and comparisons are still shown). 
+
 HV filters were (20.3 $\pm$ 0.2) cm x (25.4 $\pm$ 0.2) cm in size, with and exposed area of 406.5 cm$^2$, and a collection efficiency of at least 99\% according to the ASTM D 2986-91 test.
 
 
@@ -191,30 +196,48 @@ When not in the dryer, HV filters were kept at -20 °C, and LV at normal refrige
 
 
 \subsection{Filter composition}
-%FACU o Costa Rica
+%FACU o Costa Rica (habría que ver como preparan para OC/EC)
+For ion analysis, cut filters are placed in a 150 ml beaker and extracted with
+deionized water, using an ultrasonic bath at 45 °C for 45 minutes, with 15 minute intervals for renewal of the ultrasound bath in between. The extract obtained is quantitatively transferred to a 100 ml flask. The analysis of the ions was carried out through suppressed ion chromatography with the equipment DIONEX ICS-5000, a ION PACK AS19 - Analytical - 4 x 250 mm column and KOH as eluent.
+In the case of the trace elements, a digestion procedure for microwave extraction was performed. 10 ml of a acid solution of  3\% $\mathrm{HNO_3}$/8\% $\mathrm{HCl}$ are added to the centrifuge tubes with the cut filters inside. After the microwave extraction, the sample is dispensed in a 20 ml beaker and analysed with an inductively coupled plasma mass spectrometry equipment (ICP-MS) Perkin Elmer Optima 5100 DV.
+%Referencia de la norma 
+%Lo de Costa Rica?
 
 \subsection{Mass reconstruction}
-Mass reconstruction was attempted according to \textbf{ELEGIR} method. Si was estimated as 
+Mass reconstruction was attempted according to \textbf{ELEGIR} method. [Si] was estimated as $2.4729$\ [Al] (\textbf{CITA}). 
 
-\section{Results}
+\section{Results and discussion}
 \label{sec:results}
 
 \subsection{PM$_{2.5}$ mass}
 \label{subsec:total_mass}
-In Figure \ref{fig:PM2.5_mass} we show the temporal series of HV and LV filters. As expected [\textbf{CITA}], in all cases HV PM$_{2.5}$ measurements were higher than LV PM$_{2.5}$. As expected, the mass concentration follows a lognormal distribution (see \ref{subsec:reconstruction} for a description of the tests). %ver si esto va acá o en metodología
- \begin{figure}
+In Figure \ref{fig:PM2.5_mass} we show the temporal series of HV and LV filters. As expected [\textbf{CITA}], in all cases HV PM$_{2.5}$ measurements were higher than LV PM$_{2.5}$. As expected, the mass concentration follows a lognormal distribution (see \ref{subsec:reconstruction} for a description of the tests).
+
+HV mass concentrations and LV mass concentrations are linearly related \ref{fig:hv_lv}.
+%ver si esto va acá o en metodología
+
+ \begin{figure}[h!]
      \centering
-     \includegraphics[width=\textwidth]{date_hv_lv.png}
-     \caption{High volume and Low Volume measurements during the campaign. As shown, HV filters usually register higher PM$_{2.5}$ mass concentration than LV.} 
+     \includegraphics[width=0.7\textwidth]{time_series.eps}
+     \caption{High volume and Low Volume measurements during the campaign. As shown, HV filters usually register higher PM$_{2.5}$ mass concentration than LV. Dashes in red show target 3, and dashes in green show best known upper limit, according to WHO Guidelines \textbf{CITA}.} 
      \label{fig:PM2.5_mass}
  \end{figure}
+ 
+ \begin{figure}[h!]
+     \centering
+     \includegraphics[width=0.5\textwidth]{lv_vs_hv.eps}
+     \caption{LV vs HV PM$_{2.5}$. There is a linear relationship between the to variables (R$^2 = 0.745$, with larger dispersion at higher PM$_{2.5}$ mass. }
+     \label{fig:hv_lv}
+ \end{figure}
+ 
+ During the measured year, HV filters showed values surpassing guidelines 10 times, and LV filters did so twice.  The yearly mean value was $10.2 \  \mu g\, m^{-3}$, SD = $4.8$ for LV and $16.9\ \mu g\, m^{-3}$, SD = $7.0$.
 % \subsection{Low Volume vs. High Volume}
 % According to our measurements, HV filter sampling generally registers higher PM$_{2.5}$ concentrations than LV (fig. \ref{fig:PM2.5_mass}). The relation between LV and high-volume seems linear, even though the R$^2$ parameter is somewhat low (figure \ref{fig:hv_lv}). 
 % 
 % 
 % \begin{figure}
 %     \centering
-%     \includegraphics[width=\textwidth]{hv_vs_lv.png}
+%     \includegraphics[width=\textwidth]{hv_vs_lv_py.png}
 %     \caption{HV vs LV PM$_{2.5}$. When looking at the }
 %     \label{fig:hv_lv}
 % \end{figure}
@@ -230,12 +253,14 @@ In Figure \ref{fig:PM2.5_mass} we show the temporal series of HV and LV filters.
 % \end{table}
 \subsection{Mass reconstruction}
 \label{subsec:reconstruction}
-PM$_{2.5}$ and all its measured components, with the exception of Fe, Zn and Ag, had a lognormal distribution according to Python's scypy.stats function ``normaltest'', based on D'Agostino's and Pearson's method (\textbf{CITA}) (the lognormality null hypothesis was rejected if p-value < 0.05). %sospecho que esta descripción va en metodología
+PM$_{2.5}$ and all its measured components, with the exception of Fe, Zn and Ag, follow a lognormal distribution according to Python's scypy.stats function ``normaltest'', based on D'Agostino's and Pearson's method (\textbf{CITA}) (the lognormality null hypothesis was rejected if p-$value < 0.05$). %sospecho que esta descripción va en metodología
 
+\subsection{Uncertany estimation}
 
+The uncertainty study is based on the evaluation of the parameters that could affect the analytical determination. Taking into account the main uncertainty sources for the analysis, an approximation could be assessed theoretically. This calculation procedure is called uncertainty propagation and was used for the determination of the uncertainty associated with the concentration of the chemical components of the PM.
 
-\section{Discussion}
-\label{sec:discussion}
+%\section{Discussion}
+%\label{sec:discussion}
 
 
 \section{Conclusion}
@@ -250,7 +275,7 @@ PM$_{2.5}$ and all its measured components, with the exception of Fe, Zn and Ag,
 %% If you have bibdatabase file and want bibtex to generate the
 %% bibitems, please use
 %%
-%%  \bibliographystyle{elsarticle-harv} 
+\bibliographystyle{elsarticle-harv} 
 %%  \bibliography{<your bibdatabase>}
 
 %% else use the following coding to input the bibitems directly in the
@@ -260,7 +285,6 @@ PM$_{2.5}$ and all its measured components, with the exception of Fe, Zn and Ag,
 
 %% \bibitem[Author(year)]{label}
 %% Text of bibliographic item
-
 \bibliography{references.bib}
 
 
